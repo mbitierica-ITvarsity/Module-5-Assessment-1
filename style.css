@@ -12,6 +12,7 @@ font-size: 40px;
 text-shadow: 0 0 10px #000000;
 color: white;
 }
+/*========================SUN=================*/
 #sun{
 position: absolute;
 z-index: 1000;
@@ -35,7 +36,7 @@ position: absolute;
 width: 1204px;
 height: 1204px;
 bottom: -512px;
-left: 50px;
+left: 50%;
 margin-left: -602px;
 border: 1px dotted white;
 border-radius: 50%;
@@ -47,77 +48,30 @@ animation: spin-left 14s linear infinite;
 bottom: 692px;
 
 }
-
-/*========================Please Remove=================*/
-#container{
-    transform: scale(0.8, 0.8)translate(0, 700px);
-}
-
-
-
-
-
-/*========================Label-box=================*/
-.label-box{
-position: absolute;
-width: 150px;
-left: 50%;
-margin-left: -75px;
-text-align: center;
-text-decoration-color: white;
-font-weight: 100;
-font-family: sans-serif;
-}
-.label-box a{
-text-decoration: none;
-padding: 0;
-margin: 0;
-}
-.label-box a:visited{
-color: white;
-}
-/*========================ANIMATION=================*/
-
-@keyframes spin-left{
-100%{
-transform: rotate(-360deg);
--webkit-transform: rotate(-360deg);
-}
-
-}
-@keyframes spin-right{
-100%{
-transform: rotate(360deg);
--webkit-transform: rotate(360deg);
-
-}
-
-}
-
 /*========================URANUS=================*/
 #uranus{
-width: 66px;
-height: 66px;
-margin: 120px;
-z-index: 1000;
-animation: spin-right 8s linear infinite;
--webkit-animation: spin-right 8s linear infinite;
-}
-#uranus-orbit{
-position: absolute;
-width: 1062px;
-height: 1062px;
-bottom: -441px;
-left: 50px;
-margin-left: -531px;
-border: 1px dotted white;
-border-radius: 50%;
-animation: spin-left 15s linear infinite;
--webkit-animation: spin-left 15s linear infinite;
-}
-#uranus-label{
-bottom: 620px;
-}
+    width: 66px;
+    height: 66px;
+    margin: 120px;
+    z-index: 1000;
+    animation: spin-right 8s linear infinite;
+    -webkit-animation: spin-right 8s linear infinite;
+    }
+    #uranus-orbit{
+    position: absolute;
+    width: 1062px;
+    height: 1062px;
+    bottom: -441px;
+    left: 50%;
+    margin-left: -531px;
+    border: 1px dotted white;
+    border-radius: 50%;
+    animation: spin-left 15s linear infinite;
+    -webkit-animation: spin-left 15s linear infinite;
+    }
+    #uranus-label{
+    bottom: 620px;
+    }
 /*========================SATURN=================*/
 #saturn{
     width: 110px;
@@ -131,7 +85,7 @@ bottom: 620px;
     width: 876px;
     height: 876px;
     bottom: -348px;
-    left: 50px;
+    left: 50%;
     margin-left: -438px;
     border: 1px dotted white;
     border-radius: 50%;
@@ -155,7 +109,7 @@ bottom: 620px;
     width: 656px;
     height: 656px;
     bottom: -238px;
-    left: 50px;
+    left: 50%;
     margin-left: -328px;
     border: 1px dotted white;
     border-radius: 50%;
@@ -179,7 +133,7 @@ bottom: 620px;
     width: 508px;
     height: 508px;
     bottom: -164px;
-    left: 50px;
+    left: 50%;
     margin-left: -254px;
     border: 1px dotted white;
     border-radius: 50%;
@@ -203,7 +157,7 @@ bottom: 620px;
     width: 410px;
     height: 410px;
     bottom: -115px;
-    left: 50px;
+    left: 50%;
     margin-left: -205px;
     border: 1px dotted white;
     border-radius: 50%;
@@ -213,7 +167,6 @@ bottom: 620px;
     #earth-label{
     bottom: 294px;
     }
-
 /*========================VENUS=================*/
 #venus{
     width: 50px;
@@ -259,6 +212,47 @@ bottom: 620px;
     #mercury-label{
     bottom: 189px;
     }
+
+/*========================Please Remove=================*/
+#container{
+    transform: scale(0.8, 0.8)translate(0, 700px);
+}
+
+/*========================Label-box=================*/
+.label-box{
+position: absolute;
+width: 150px;
+left: 50%;
+margin-left: -75px;
+text-align: center;
+text-decoration-color: white;
+font-weight: 100;
+font-family: sans-serif;
+}
+.label-box a{
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+.label-box a:visited{
+color: white;
+}
+/*========================ANIMATION=================*/
+
+@keyframes spin-left{
+100%{
+transform: rotate(360deg);
+-webkit-transform: rotate(-360deg);
+}
+
+}
+@keyframes spin-right{
+100%{
+transform: rotate(360deg);
+}
+
+}
+
 
 
 
